@@ -1,50 +1,84 @@
-/* body {
+/* General body styling */
+body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; /* soft light blue */
+}
+
+/* Header banner */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main container for two-column layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     margin: 20px;
-    background-color: #a8b4bf;
 }
 
-/* Headings */
-h1 {
+/* Left column (homepage image) */
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Right column (topics list) */
+.right {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Topics heading */
+.right h2 {
+    text-align: center;
     color: #333;
-    text-align: center;
 }
 
-/* Paragraphs */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #444;
-}
-
-/* Navigation bar */
+/* Navigation links inside topics */
 nav {
-    margin-top: 20px;
-    text-align: center;
-    background-color: #eee;
-    padding: 10px;
-    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-/* Navigation links */
 nav a {
-    margin: 0 10px;
+    margin: 5px 10px;
     text-decoration: none;
     color: #0066cc;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #e6f2ff;
     color: #003366;
 }
 
 /* Images */
 img {
     display: block;
-    margin: 20px auto;
-    max-width: 400px;
+    margin: 0 auto;
+    max-width: 90%;
     border: 2px solid #ccc;
     border-radius: 5px;
-}General page styling */
+}
 
+/* Footer bar */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
