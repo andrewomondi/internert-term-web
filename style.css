@@ -1,84 +1,91 @@
-/* General body styling */
+/* Reset */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f0f8ff; /* soft light blue */
-}
-
-/* Header banner */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Main container for two-column layout */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px;
-}
-
-/* Left column (homepage image) */
-.left {
-    flex: 1;
-    padding: 20px;
-}
-
-/* Right column (topics list) */
-.right {
-    flex: 1;
-    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Topics heading */
-.right h2 {
-    text-align: center;
     color: #333;
 }
 
-/* Navigation links inside topics */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #0066cc, #00ccff);
+    text-align: center;
+    padding: 60px 20px;
 }
 
-nav a {
-    margin: 5px 10px;
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #ffdd00; /* Title color: bright yellow */
 }
 
-nav a:hover {
-    background-color: #e6f2ff;
-    color: #003366;
+.hero p {
+    font-size: 1.2em;
+    color: #e0f7fa; /* Subtitle color: soft aqua */
 }
 
-/* Images */
-img {
+/* Hero image */
+.hero-image img {
     display: block;
-    margin: 0 auto;
-    max-width: 90%;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-/* Footer bar */
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Topics section */
+.topics {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.topics h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #0066cc; /* Section subtitle color */
+}
+
+/* Grid layout for topics */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sexy card-style links */
+.grid a {
+    display: block;
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e6f2ff);
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for cards */
+.grid a:hover {
+    background: linear-gradient(135deg, #0066cc, #00ccff);
+    color: white;
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
-    margin-top: 20px;
+    padding: 15px;
+    margin-top: 40px;
 }
+
