@@ -2,26 +2,28 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #000000; /* Black background */
+    color: #f5f5f5; /* Light text for readability */
 }
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #0066cc, #00ccff);
+    background: linear-gradient(135deg, #000000, #1a1a1a);
     text-align: center;
     padding: 60px 20px;
+    border-bottom: 3px solid #d4af37; /* Gold accent line */
 }
 
 .hero h1 {
     font-size: 2.8em;
     margin-bottom: 10px;
-    color: #ffdd00; /* Title color: bright yellow */
+    color: #d4af37; /* Gold title */
 }
 
 .hero p {
     font-size: 1.2em;
-    color: #e0f7fa; /* Subtitle color: soft aqua */
+    color: #f5f5f5; /* Light subtitle */
+    opacity: 0.85;
 }
 
 /* Hero image */
@@ -30,7 +32,7 @@ body {
     margin: 40px auto;
     max-width: 600px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(212,175,55,0.4); /* Gold glow */
     transition: transform 0.3s ease;
 }
 
@@ -47,7 +49,7 @@ body {
 .topics h2 {
     font-size: 2em;
     margin-bottom: 25px;
-    color: #0066cc; /* Section subtitle color */
+    color: #d4af37; /* Gold section heading */
 }
 
 /* Grid layout for topics */
@@ -59,33 +61,39 @@ body {
     margin: 0 auto;
 }
 
-/* Sexy card-style links */
-.grid a {
-    display: block;
-    padding: 20px;
-    background: linear-gradient(135deg, #f9f9f9, #e6f2ff);
+/* Sexy card-style links (homepage + topic pages) */
+.grid a,
+nav a,
+.back-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #1a1a1a; /* Dark card background */
     border-radius: 12px;
     text-decoration: none;
-    color: #333;
+    color: #d4af37; /* Gold text */
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(212,175,55,0.3);
     transition: all 0.3s ease;
+    margin: 8px;
 }
 
-/* Hover effect for cards */
-.grid a:hover {
-    background: linear-gradient(135deg, #0066cc, #00ccff);
-    color: white;
+/* Hover effect for all buttons */
+.grid a:hover,
+nav a:hover,
+.back-button:hover {
+    background: #d4af37; /* Gold background */
+    color: #000000; /* Black text */
     transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 15px rgba(212,175,55,0.6);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1a1a1a;
+    color: #d4af37;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+    border-top: 2px solid #d4af37;
 }
 
