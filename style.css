@@ -97,3 +97,24 @@ footer {
     border-top: 2px solid #d4af37;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #d4af37; /* Gold borders */
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #1a1a1a; /* Dark header background */
+    color: #d4af37; /* Gold header text */
+}
+tr:nth-child(even) {
+    background-color: #2a2a2a; /* Slightly lighter rows */
+}
+tr:hover {
+    background-color: #d4af37; /* Gold highlight on hover */
+    color: #000000; /* Black text on hover */
+}
